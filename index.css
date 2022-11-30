@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --spacing: 10px;
+    --blur:0px;
+    --back: yellow;
+
+}
+body{
+    margin:0;
+    padding:0;
+    background: linear-gradient(to right,var(--back),purple);
+    overflow: hidden;
+
+}
+.active{
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800;
+    padding:5px;
+    margin-bottom: 20px;
+}
+.update{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(pink, yellow);
+    padding:30px;
+}
+label{
+    margin:10px;
+    font-size: 23px;
+    color:rgb(53, 104, 199);
+    font-weight: 800;
+    background: white;
+    border:2px solid rgb(241, 244, 246);
+    border-radius: 8px;
+
+
+}
+input{
+    padding: 15px;
+    margin:5px;
+}
+.image{
+    margin:20px;
+    width:100%;
+    /* height:700px; */
+    object-fit: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-height:100vh;
+
+
+
+}
+img{
+    padding:var(--spacing);
+    filter:blur(var(--blur));
+    background: black;
+    border-radius: 25px;
+    
+
+}
+
